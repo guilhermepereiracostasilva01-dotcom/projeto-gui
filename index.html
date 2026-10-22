@@ -1,0 +1,67 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quiz interativo de conhecimentos gerais">
+  <title>Quiz Interativo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topo">
+    <h1>Quiz Interativo</h1>
+    <p>Teste seus conhecimentos!</p>
+  </header>
+
+  <main>
+    <section class="quiz" aria-labelledby="titulo-quiz">
+      <article id="tela-quiz">
+        <div class="informacoes">
+          <span id="progresso">Pergunta 1 de 5</span>
+          <span id="pontuacao">Pontos: 0</span>
+        </div>
+
+        <div class="barra">
+          <div id="progresso-barra"></div>
+        </div>
+
+        <h2 id="titulo-quiz">Vamos começar?</h2>
+
+        <form id="form-quiz">
+          <fieldset id="alternativas">
+            <legend id="pergunta">Carregando pergunta...</legend>
+          </fieldset>
+
+          <p id="feedback" role="status" aria-live="polite"></p>
+
+          <div class="botoes">
+            <button type="button" id="anterior" class="secundario">
+              Anterior
+            </button>
+            <button type="submit" id="proximo">
+              Confirmar resposta
+            </button>
+          </div>
+        </form>
+      </article>
+
+      <article id="resultado" hidden>
+        <h2>Quiz finalizado!</h2>
+        <p id="mensagem-final"></p>
+        <p id="placar-final" class="placar"></p>
+        <button type="button" id="reiniciar">
+          Jogar novamente
+        </button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Quiz Interativo — Projeto educativo</p>
+  </footer>
+</body>
+</html>
+
