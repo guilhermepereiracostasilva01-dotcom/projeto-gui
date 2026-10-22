@@ -1,0 +1,200 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+}
+
+.topo {
+  background: #4338ca;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.topo h1 {
+  margin: 0 0 8px;
+}
+
+.topo p {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 15px;
+}
+
+.quiz {
+  background: white;
+  width: 100%;
+  max-width: 600px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px #00000012;
+}
+
+.informacoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.barra {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  margin: 15px 0 25px;
+  overflow: hidden;
+}
+
+#progresso-barra {
+  height: 100%;
+  width: 0;
+  background: #4f46e5;
+  transition: width 0.3s;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.opcao:hover {
+  border-color: #818cf8;
+  background: #eef2ff;
+}
+
+.opcao input {
+  accent-color: #4338ca;
+  width: 18px;
+  height: 18px;
+}
+
+.opcao.correta {
+  border-color: #16a34a;
+  background: #dcfce7;
+}
+
+.opcao.errada {
+  border-color: #dc2626;
+  background: #fee2e2;
+}
+
+button {
+  background: #4338ca;
+  color: white;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3730a3;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.secundario {
+  background: #64748b;
+}
+
+.secundario:hover {
+  background: #475569;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#feedback {
+  font-weight: bold;
+  min-height: 24px;
+}
+
+.placar {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4338ca;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #64748b;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .quiz {
+    padding: 20px 16px;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+
+  .botoes button {
+    width: 100%;
+  }
+
+  .informacoes {
+    font-size: 12px;
+  }
+}
+
